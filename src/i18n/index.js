@@ -3,11 +3,11 @@ class __I18NProvider__ extends Provider{
     constructor(component, {lang, locals}){
         super(component)
         document.documentElement.lang = lang;
-        Object.assign(globalThis.__Ziko__, {
-            i18n : {
-                locals
-            }
-        })
+        if(!globalThis.__Ziko__.__PROVIDERS__) globalThis.__Ziko__.__PROVIDERS__ = {}
+        globalThis.__Ziko__.__PROVIDERS__.i18n = {
+            lang, 
+            locals
+        }
     }
 }
 

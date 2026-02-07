@@ -5,14 +5,16 @@ import {
 import {tags} from 'ziko/ui'
 
 const l = {
-  'start' : 'commencer',
-  'end' : 'temriner'
+  fr: {
+      start : 'commencer',
+      end : 'temriner'
+  }
 }
 
 globalThis.app = 
 I18NProvider(
   DirectionProvider(
-    tags.p('hello from provider ', l['start']),
+    tags.p('hello from provider ', l.fr['start']),
     { dir : 'ltr'}
   ),
   { lang : 'en'}

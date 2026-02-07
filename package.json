@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "exports": {
-    ".":{
+    ".": {
       "import": "./src/index.js"
     },
     "./*": {
@@ -32,6 +32,6 @@
     "rollup": "^4.24.0"
   },
   "dependencies": {
-    "ziko": "^0.61.3"
+    "ziko": "^0.62.0"
   }
 }
