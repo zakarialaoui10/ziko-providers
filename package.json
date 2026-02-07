@@ -1,12 +1,12 @@
 {
   "name": "ziko-providers",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "type": "module",
-  "exports":{
+  "exports": {
     "./*": {
-      "import" : "./src/*/index.js"
+      "import": "./src/*/index.js"
     }
   },
   "scripts": {
@@ -29,6 +29,6 @@
     "rollup": "^4.24.0"
   },
   "dependencies": {
-    "ziko": "^0.61.2"
+    "ziko": "^0.61.3"
   }
 }
