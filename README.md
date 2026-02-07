@@ -4,9 +4,9 @@
 
 ## List of providers
 
-|Provider|Description|
-|`DirectionProvider`||
-|`ThemeProvider`||
+- Direction : `DirectionProvider`
+- I18N : `createI18NProvider`, `useTranslation`
+
 
 <!-- ## Install
 
