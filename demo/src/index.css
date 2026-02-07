@@ -1,0 +1,30 @@
+body{
+    min-width: 40vw;
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+}
+
+nav{
+    border: 2px dodgerblue dotted;
+    border-radius: 2em;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+button{
+    min-width: 40px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+a{
+    color: blueviolet;
+}
+a:hover{
+    color: blue;
+}

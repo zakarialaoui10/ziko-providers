@@ -1,0 +1,20 @@
+{
+  "en": {
+      "home" : "Home",
+      "about" : "About",
+      "start" : "Quick start",
+      "components" : "Components"
+  },
+  "fr": {
+      "home" : "Accueil",
+      "about" : "A propos",
+      "start" : "Démarrage rapide",
+      "components" : "Composants"
+  },
+  "es": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "start": "Inicio rápido",
+    "components": "Componentes"
+  }
+}

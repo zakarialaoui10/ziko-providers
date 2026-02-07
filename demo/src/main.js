@@ -1,40 +1,28 @@
+import './index.css'
 import { 
-  DirectionProvider,
   createI18NProvider,
   useTranslation
 } from 'ziko-providers';
 import {tags} from 'ziko/ui'
+import locals from './locals.json'
 
-const locals = {
-  fr: {
-      start : 'Commencer',
-      end : 'Temriner'
-  },
-  en: {
-      start : 'Start',
-      end : 'End'
-  }
-}
-
-
-createI18NProvider('fr', locals)
-
+createI18NProvider('en', locals)
 
 const App = () =>{
-
+  const { a, span, button : btn, nav} = tags
   const [t, setLang] = useTranslation()
-
-  // setLang('en')
-
-  return tags.p(
-    t('start'), 
-    tags.br(),
-    tags.button("En").onClick(()=> setLang('en')),
-    tags.button("fr").onClick(()=> setLang('fr'))
-  ) 
+  return nav(
+    a({href : "#"}, t('home')),
+    a({href : "#"}, t('about')),
+    a({href : "#"}, t('start')),
+    a({href : "#"}, t('components')),
+    span(
+      btn('En').onClick(()=>setLang('en')),
+      btn('Fr').onClick(()=>setLang('fr')),
+      btn('Es').onClick(()=>setLang('es'))
+    )
+  )
 } 
-globalThis.prov = DirectionProvider(App(), { dir : 'ltr'})
-
-prov.mount(document.body)
+App().mount(document.body)
 
 
