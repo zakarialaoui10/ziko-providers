@@ -1,6 +1,6 @@
 {
   "name": "ziko-providers",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -32,6 +32,12 @@
     "rollup": "^4.24.0"
   },
   "dependencies": {
-    "ziko": "^0.62.0"
+    "mdzjs": "^0.11.3",
+    "zextra": "^0.13.0",
+    "ziko": "^0.62.0",
+    "ziko-server": "^0.18.1",
+    "ziko-tgl": "^0.7.5",
+    "ziko-wrapper": "^0.30.2",
+    "zikofy": "^0.7.2"
   }
 }
