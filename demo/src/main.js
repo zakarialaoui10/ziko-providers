@@ -1,12 +1,12 @@
 import './index.css'
 import { 
-  createI18NProvider,
+  createI18nProvider,
   useTranslation
-} from 'ziko-providers';
+} from 'ziko-i18n';
 import {tags} from 'ziko/ui'
 import locals from './locals.json'
 
-createI18NProvider('en', locals)
+createI18nProvider('en', locals)
 
 const App = () =>{
   const { a, span, button : btn, nav} = tags

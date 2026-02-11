@@ -1,7 +1,7 @@
-import { UIElement } from "ziko/src/ui/constructors/UIElement.js"
-
-export class Provider extends UIElement{
-    constructor(component){
-        super({ element : component.element})
-    }
+export function createI18nProvider(lang, locals){
+    if(!globalThis.__Ziko__.__PROVIDERS__) globalThis.__Ziko__.__PROVIDERS__ = {}
+    globalThis.__Ziko__.__PROVIDERS__.i18n = {
+        lang, 
+        locals,
+    }  
 }

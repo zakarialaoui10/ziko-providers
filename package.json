@@ -1,15 +1,12 @@
 {
   "name": "ziko-i18n",
   "version": "1.0.0",
-  "description": "",
+  "description": "reactive i18n provider for zikojs",
   "main": "index.js",
   "type": "module",
   "exports": {
     ".": {
       "import": "./src/index.js"
-    },
-    "./*": {
-      "import": "./src/*/index.js"
     }
   },
   "scripts": {
