@@ -1,13 +1,13 @@
-# ziko-i18n
+# @zikojs/i18n
 
-[![ziko-i18n banner](https://raw.githubusercontent.com/zakarialaoui10/ziko-i18n/606f5caf87b1d41184c7989c11e5272c68a375ab/assets/banner.svg)](https://github.com/zakarialaoui10/zikojs)
+<!-- [![ziko-i18n banner](https://raw.githubusercontent.com/zakarialaoui10/@zikojs/i18n/606f5caf87b1d41184c7989c11e5272c68a375ab/assets/banner.svg)](https://github.com/zakarialaoui10/zikojs) -->
 
 Reactive internalization provider for zikojs 
 
 
 ## Install 
 ```bash
-npm i ziko-i18n
+npm i @zikojs/i18n
 
 ```
 
@@ -23,7 +23,7 @@ npm i ziko-i18n
 
 ```js
 import { tags } from 'ziko/dom'
-import {createI18NProvider, createI18NProvider} from 'ziko-i18n'
+import {createI18NProvider, createI18NProvider} from '@zikojs/i18n'
 import locals from './locals.json'
 
 createI18nProvider('en', locals)

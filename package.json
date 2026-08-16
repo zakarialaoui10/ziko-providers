@@ -1,6 +1,6 @@
 {
-  "name": "ziko-i18n",
-  "version": "1.0.2",
+  "name": "@zikojs/i18n",
+  "version": "0.1.0",
   "description": "reactive i18n provider for zikojs",
   "main": "index.js",
   "type": "module",
@@ -15,6 +15,9 @@
     "watch": "cross-env NODE_ENV=development rollup --config rollup.config.js -w",
     "build": "cross-env NODE_ENV=production rollup --config rollup.config.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zakarialaoui10/ziko-i18n.git"
@@ -22,17 +25,19 @@
   "author": "zakaria elalaoui",
   "keywords": [
     "zikojs",
-    "zikojs-addons"
+    "i18n",
+    "internalisation",
+    "translate"
   ],
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-commonjs": "^29.0.3",
     "@rollup/plugin-node-resolve": "^16.0.3",
-    "@rollup/plugin-terser": "^0.1.0",
+    "@rollup/plugin-terser": "^1.0.0",
     "cross-env": "^10.1.0",
-    "rollup": "^4.59.0"
+    "rollup": "^4.62.4"
   },
   "dependencies": {
-    "ziko": "^0.70.0"
+    "ziko": "^1.8.0"
   }
 }
